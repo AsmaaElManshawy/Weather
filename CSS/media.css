@@ -1,0 +1,79 @@
+
+
+@media (max-width: 992px) {
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--bg-second-color);
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+    
+    .navbar-nav .nav-link.active, 
+    .navbar-nav .nav-link.show {
+        color: #009ad8;
+    }
+    .nav-link , .nav-link:focus ,.nav-link:hover {
+        padding: 0 1.5rem;
+        font-size: 14px;
+        border-radius: 30px;
+        color: white;
+        border: 2px solid transparent;
+        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    }
+    .nav-item {
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .nav-item:last-child {
+        border-bottom: none;
+    }
+
+    #weather-row #today {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    #weather-row #next-2-day {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+
+@media (min-width: 992px) {
+    .map-parent {
+        width: 100%;
+        padding-bottom: 0 !important;
+        height: 350px;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding: 0 1.5rem;
+    }
+    .nav-link, .nav-link:focus {
+        padding: 0 1.5rem;
+        font-size: 14px;
+        border-radius: 30px;
+        color: white;
+        border: 2px solid transparent;
+        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    }
+    
+    .navbar-nav .nav-link:hover, 
+    .navbar-nav .nav-link.active, 
+    .navbar-nav .nav-link.show {
+        border-color: #009ad8;
+        color: #009ad8;
+    }
+
+    #weather-row  #today {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    #weather-row #next-2-day {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}

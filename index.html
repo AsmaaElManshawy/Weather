@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/media.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg py-5">
+        <div class="container">
+            <a class="navbar-brand d-flex gap-3" href="#">
+                <img src="image/logo@2x.png" alt="clouds">
+                <div>
+                    <h1 class="text-white">Weather</h1>
+                    <small>tagline goes here</small>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fa-solid fa-bars fs-4"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Live cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"   href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="location">
+            <div class="container">
+                <form>
+                    <div class="warpper position-relative">
+                        <input id="findInput" type="text" placeholder="Find your location...">
+                        <button class="rounded-pill" type="submit">Find</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="content">
+
+            <div class="container py-5">
+
+                <div id="weather-row" class="row gx-0">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container py-5">
+
+            <div class="row">
+                <form class="col-12 col-lg-8 mb-4">
+                    <div class="warpper position-relative">
+                        <input type="text" placeholder="Enter your email to subscribe...">
+                        <button class="rounded-pill" type="submit">Subscribe</button>
+                    </div>
+                </form>
+                <div class="col-12 col-lg-3 offset-lg-1 d-flex gap-1">
+                    <a class="rounded-circle ">
+                        <i class="fa-brands fa-facebook-f mt-2 fs-5"></i>
+                    </a>
+                    <a class="rounded-circle ">
+                        <i class="fa-brands fa-twitter mt-2 fs-5"></i>
+                    </a>
+                    <a class="rounded-circle ">
+                        <i class="fa-brands fa-google-plus-g mt-2 fs-5"></i>
+                    </a>
+                    <a class="rounded-circle ">
+                        <i class="fa-brands fa-pinterest mt-2 fs-5"></i>
+                    </a>
+                </div>
+            </div>
+            <p class="ps-2">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/index.js"></script>
+</body>
+</html>

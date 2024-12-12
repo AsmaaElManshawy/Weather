@@ -1,0 +1,262 @@
+:root{
+    --primary-color: rgb(191, 193, 200);
+    --second-color:rgb(0, 154, 216);
+    --bg-primary-color:rgb(30, 32, 43);
+    --bg-second-color:#262936;
+    --head-1-3:#2D303D;
+    --head-2:#222530;
+    --body-1-3: #323544;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: var(--bg-primary-color);
+    color: var(--primary-color);
+    font-family: sans-serif;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+.fs-13 {
+    font-size: 13px;
+}
+
+.primary-head , #weather-row .col-lg:last-child {
+    background-color: var(--head-1-3) !important;
+}
+.secondery-head {
+    background-color: var(--head-2);
+}
+.primary-body , #weather-row .col-lg:last-child {
+    background-color: var(--body-1-3) !important;
+}
+.secondery-body {
+    background-color: var(--bg-second-color);
+}
+
+/* ++++++++++++++++++++++ nav ++++++++++++++++++++++++ */
+
+.navbar-brand img {
+    width: 64px;
+    height: 38px;
+}
+
+.navbar-brand div h1{
+    font-size: 16px;
+    margin: 0;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.navbar-brand div small{
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: 300;
+    color: var(--primary-color);
+}
+
+.navbar-toggler {
+    padding: 12px var(--bs-navbar-toggler-padding-x);
+    border: none;
+    border-radius: 50%;
+}
+
+.navbar-toggler:focus ,
+.navbar-toggler:hover {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 0.08rem var(--second-color);
+}
+
+.navbar-toggler i  {
+    color: white;
+}
+
+.navbar-toggler:focus i ,
+.navbar-toggler:hover i {
+    color: var(--second-color);
+}
+
+.navbar-toggler-icon {
+    background-image: none;
+}
+
+/* ++++++++++++++++++++++ home ++++++++++++++++++++++++ */
+
+#location {
+    background-image: url(../image/banner.png);
+    background-size: cover;
+    height: 350px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+#location form {
+    margin-bottom: 70px;
+}
+
+#weather-row {
+    position: relative;
+    bottom: 190px;
+}
+
+#weather div {
+    font-size: 90px;
+    margin-right: 30px;
+    line-height: 135px;
+    font-weight: 700;
+    color: white;
+}
+
+#weather img {
+    width: 64px;
+}
+
+#weather-describetion {
+    color: var(--second-color);
+}
+
+#body span {
+    margin-right: 20px;
+}
+
+#weather {
+    font-size: 24px;
+    color: white;
+    line-height: 36px;
+    font-weight: 700;
+}
+
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    top: -0.5em;
+    vertical-align: baseline;
+}
+
+/* ++++++++++++++++++++++ contact content ++++++++++++++++++++++++ */
+
+.warpper p {
+    background-color: rgb(38, 41, 54);
+}
+
+.map-parent {
+    background-color: rgb(38, 41, 54);
+    width: 80%;
+    height: 370px;
+}
+
+.map-parent i {
+    color: var(--second-color) ;
+    margin-right: 3px;
+}
+
+.map {
+    height: 220px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* ++++++++++++++++++++ form ++++++++++++++++++++ */
+
+.my-input {
+    font-size: 14px;
+    background-color: transparent;
+    border: 2px solid #393c48;
+    border-radius: 50px;
+    padding: 10px 15px;
+    width: 100%;
+}
+
+.my-input:focus, 
+.my-input:hover, 
+.my-input:focus {
+    border-color: var(--second-color) ;
+    outline: 0;
+    color: white;
+} 
+
+.my-btn {
+    color: white;
+    background-color: var(--second-color);
+    border-color: transparent;
+    border-radius: 50px;
+    padding: 7px 20px;
+    position: relative;
+    left: 87.5%;
+}
+
+/* ++++++++++++++++++++++ footer ++++++++++++++++++++++++ */
+
+footer {
+    background-color: var(--bg-second-color);
+}
+
+footer a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: var(--bg-primary-color);
+    color: var(--second-color);
+}
+
+footer a:hover {
+    background-color: var(--second-color);
+    color: var(--primary-color);
+}
+
+.warpper input {
+    background-color: rgb(30, 32, 43);
+    border: 2px solid transparent;
+    border-radius: 50px;
+    padding: 1rem 2rem;
+    width: 100%;
+}
+
+.warpper input:hover, 
+.warpper input:focus {
+    border-color: transparent;
+    color: white;
+    outline: 0;
+}
+
+.warpper button {
+    width: 12%;
+    color: white;
+    background-color: var(--second-color);
+    border-color: transparent;
+    border-radius: 10px;
+    height: 82%;
+    margin-top: 5px;
+    aspect-ratio: 1;
+    position: absolute;
+    right: 0.5%;
+}
+
+/* ++++++++++++++++ error page +++++++++++++++ */
+
+.card {
+    width: 412px;
+    padding: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.two  {
+    color: rgb(5, 72, 97);
+    font-weight: 600;
+}
+.card a {
+    text-decoration: underline;
+    color: rgb(5, 72, 97);
+    font-weight: 600;
+}
+.card a:hover {
+    text-decoration: none;
+}
